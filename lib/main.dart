@@ -5,6 +5,8 @@ import 'package:riverpod_todolist/todo_list/todo.dart';
 import 'package:riverpod_todolist/todo_list/todo_list_widgets.dart';
 import 'package:riverpod_todolist/vandad_tutorials/counter_app/counter_app.dart';
 
+import 'vandad_tutorials/create_person/create_person.dart';
+import 'vandad_tutorials/stream_provider/stream_provider.dart';
 import 'vandad_tutorials/weather_app/weather_app.dart';
 
 void main() {
@@ -20,12 +22,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primaryColor: Colors.blue),
+      // theme: ThemeData.dark(),
+      // darkTheme: ThemeData.dark(),
+
       // home: Home(),
       // home: CounterApp(),
-      home: WeatherApp(),
+      // home: WeatherApp(),
+      // home: MyStreamProvider(),
+      home: CreatePerson(),
     );
   }
 }
